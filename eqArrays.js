@@ -7,12 +7,6 @@ const assertEqual = function(actual, expected) {
 };
 
 
-
-
-
-
-
-
 const eqArrays = function(array1,array2) {
   if (array1.length !== array2.length) {
     return false;
@@ -37,6 +31,8 @@ assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
 
 
 // use a forloop to go through just the length of array1 this should check if they are the same
-// this may have problems if they are different lengths so check for that using .length
-//compare each spot
+// this may have problems if they are different lengths so check for that using .length and fail
+//right away if they arent the same length
+//compare each spot between the two using a forloop to check each part of the array
+//if something is wrong return false if nothing is wrong always return true
 
