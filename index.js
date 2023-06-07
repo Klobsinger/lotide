@@ -34,7 +34,7 @@ module.exports = {
   assertObjectsEqual: assertObjectsEqual,
   map: map,
   assertEqual: assertEqual,
-  assertArraysEqual: assertArraysEqual,
+  assertArraysEqual: assertArraysEqual
 };
 const functions = require('./index');
 console.log(functions)
