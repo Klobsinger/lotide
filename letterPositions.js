@@ -36,7 +36,7 @@ const letterPositions = function(sentence) {
   return results;
 };
 
-module.exports = letterPositions
+module.exports = letterPositions;
 
 
 assertArraysEqual(letterPositions("LightHouseLabs").a, [11]);

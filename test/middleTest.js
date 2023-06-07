@@ -1,5 +1,5 @@
-const assertArraysEqual = require('../assertArraysEqual')
-const middle = require('../middle')
+const assertArraysEqual = require('../assertArraysEqual');
+const middle = require('../middle');
 let testUnder3 = middle([1]);
 let testEven = middle([1,2,3]);
 let testOdd = middle([1,2,3,4]);

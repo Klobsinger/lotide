@@ -22,7 +22,7 @@ const countLetters = function(sentence) {
 
   return lettersCounted;
 };
-module.exports = countLetters
+module.exports = countLetters;
 const result = countLetters("lighthouse in the house");
 const expected = {
   l: 1,
@@ -37,5 +37,5 @@ const expected = {
   n: 1,
 };
 assertEqual(JSON.stringify(result), JSON.stringify(expected));    // I was not sure how to do the previous test from countOnly.js
-                                                                  //online i found the json.stringify method which converts objects to strings
-                                                                  //and then compares the values? i believe this works for testing
+//online i found the json.stringify method which converts objects to strings
+//and then compares the values? i believe this works for testing

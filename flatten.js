@@ -20,9 +20,9 @@ const assertArraysEqual = function(array1,array2) {
 
 const flatten = function(array) {
   let flattenedArray = [];
-for (let i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     if (Array.isArray(array[i])) {
-    const nestedFlattenedArray = flatten(array[i]);
+      const nestedFlattenedArray = flatten(array[i]);
       flattenedArray = flattenedArray.concat(nestedFlattenedArray);
     } else {
       flattenedArray.push(array[i]);
@@ -33,10 +33,10 @@ for (let i = 0; i < array.length; i++) {
 };
 
 
-module.exports = flatten
+module.exports = flatten;
 
 
 
-const test = (flatten([1, 2, [3, 4], 5, [6]])) // => [1, 2, 3, 4, 5, 6]
-const test1 = [1, 2, 3, 4, 5, 6]
-assertArraysEqual(test,test1)
+const test = (flatten([1, 2, [3, 4], 5, [6]])); // => [1, 2, 3, 4, 5, 6]
+const test1 = [1, 2, 3, 4, 5, 6];
+assertArraysEqual(test,test1);

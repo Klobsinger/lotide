@@ -5,5 +5,5 @@ const tail = function(array) {
   }
   return newarray;
 };
-module.exports = tail
+module.exports = tail;
 

@@ -21,7 +21,7 @@ const eqArrays = function(array1,array2) {
 
 const eqObjects = function(object1, object2) {
   const keys1 = Object.keys(object1); // I grab the keys from object 1 / 2 and store them in two arrays
-  const keys2 = Object.keys(object2); 
+  const keys2 = Object.keys(object2);
   if (keys1.length !== keys2.length) { //I then first check if the lengths of these two arrays are not the same
     return false;   //if they arent the same length then I return false since the objects must be different
   }
@@ -29,7 +29,7 @@ const eqObjects = function(object1, object2) {
     const value1 = object1[key]; //then it assings the values of the keys in both object 1 and 2
     const value2 = object2[key];
     if (Array.isArray(value1) && Array.isArray(value2)) { //then it checks to see if these assigned values are arrays
-      if (!eqArrays(value1,value2)) { //Then it calls eqArrays function 
+      if (!eqArrays(value1,value2)) { //Then it calls eqArrays function
         return false;  //and if that returns false this function returns false aswell
       }
     } else {
@@ -41,7 +41,7 @@ const eqObjects = function(object1, object2) {
 
   return true; // if somehow the loop can complete without stopping at all the spike traps then it returns true
 };
-module.exports = eqObjects
+module.exports = eqObjects;
 
 
 
