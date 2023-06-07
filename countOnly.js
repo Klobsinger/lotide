@@ -21,7 +21,7 @@ const results = {};
 }
 return results;
 }
-
+module.exports = countOnly
 
 
 

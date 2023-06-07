@@ -41,7 +41,7 @@ const eqObjects = function(object1, object2) {
 
   return true; // if somehow the loop can complete without stopping at all the spike traps then it returns true
 };
-
+module.exports = eqObjects
 
 
 

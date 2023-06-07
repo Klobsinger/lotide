@@ -30,7 +30,7 @@ const test1 = (findKey({
   "Akelarre":  { stars: 3 }
 }, x => x.stars === 2)); // => "noma"
 assertEqual(test1,'noma');
-
+module.exports =findKey
 
 /* scan through the object and return the first key that the callback has truthy for if no key is found
 return undefined.
