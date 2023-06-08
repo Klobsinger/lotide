@@ -1,0 +1,1 @@
+assertArraysEqual(letterPositions("LightHouseLabs").a, [11]);
