@@ -1,4 +1,4 @@
-const { eqArrays } = require('./index');
+const eqArrays = require('./eqArrays');
 const eqObjects = function(object1, object2) {
   const keys1 = Object.keys(object1); // I grab the keys from object 1 / 2 and store them in two arrays
   const keys2 = Object.keys(object2);
@@ -22,3 +22,7 @@ const eqObjects = function(object1, object2) {
   return true; // if somehow the loop can complete without stopping at all the spike traps then it returns true
 };
 module.exports = eqObjects;
+
+const obj1 = { a: 1, b: 2, c: 3 };
+const obj2 = { a: 1, b: 2, c: 3 };
+

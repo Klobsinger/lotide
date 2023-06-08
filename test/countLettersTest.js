@@ -1,4 +1,5 @@
-const result = countLetters("lighthouse in the house");
+const index = require('../index')
+const result = index.countLetters("lighthouse in the house");
 const expected = {
   l: 1,
   i: 2,
@@ -11,6 +12,6 @@ const expected = {
   e: 3,
   n: 1,
 };
-assertEqual(JSON.stringify(result), JSON.stringify(expected));    // I was not sure how to do the previous test from countOnly.js
+index.assertEqual(JSON.stringify(result), JSON.stringify(expected));    // I was not sure how to do the previous test from countOnly.js
 //online i found the json.stringify method which converts objects to strings
 //and then compares the values? i believe this works for testing

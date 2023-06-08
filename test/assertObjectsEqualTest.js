@@ -1,3 +1,4 @@
+const index = require('../index')
 const test = {
   color: 'red'
 };
@@ -7,5 +8,5 @@ const test1 = {
 const test2 = {
   color : 'purple'
 };
-assertObjectsEqual(test,test2);//fail
-assertObjectsEqual(test,test1);//pass
+index.assertObjectsEqual(test,test2);//fail
+index.assertObjectsEqual(test,test1);//pass

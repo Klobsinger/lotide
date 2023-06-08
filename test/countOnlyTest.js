@@ -1,3 +1,4 @@
+const index = require('../index')
 const firstNames = [
   'Karl',
   'Salima',
@@ -10,9 +11,9 @@ const firstNames = [
   'Joe'
 ];
 
-const result1 = countOnly(firstNames, {'Jason': true, 'Karima':true, 'Fang':true, 'Agouganna':false});
+const result1 = index.countOnly(firstNames, {'Jason': true, 'Karima':true, 'Fang':true, 'Agouganna':false});
 
-assertEqual(result1['Jason'], 1);
-assertEqual(result1['Karima'], undefined);
-assertEqual(result1['Fang'], 2);
-assertEqual(result1['Agouganna'], undefined);
+index.assertEqual(result1['Jason'], 1);
+index.assertEqual(result1['Karima'], undefined);
+index.assertEqual(result1['Fang'], 2);
+index.assertEqual(result1['Agouganna'], undefined);

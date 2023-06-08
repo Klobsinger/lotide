@@ -1,5 +1,5 @@
-
-const test1 = (findKey({
+const index = require('../index')
+const test1 = (index.findKey({
   "Blue Hill": { stars: 1 },
   "Akaleri":   { stars: 3 },
   "noma":      { stars: 2 },
@@ -7,4 +7,4 @@ const test1 = (findKey({
   "Ora":       { stars: 2 },
   "Akelarre":  { stars: 3 }
 }, x => x.stars === 2)); // => "noma"
-assertEqual(test1,'noma');
+index.assertEqual(test1,'noma');
