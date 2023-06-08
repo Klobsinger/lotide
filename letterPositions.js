@@ -18,10 +18,6 @@ const assertArraysEqual = function(array1,array2) {
   }
 };
 
-
-
-
-
 const letterPositions = function(sentence) {
   const results = {};                                   //creating a empty object
   for (let i = 0; i <= sentence.length; i++) {      //using a forloop that loops through the string thats inputed

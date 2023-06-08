@@ -1,0 +1,26 @@
+{
+  "name": "@klobber/lotide",
+  "version": "1.0.0",
+  "description": "A mini clone of the Lodash library with various utility functions for common JavaScript operations.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Klobsinger/lotide.git"
+  },
+  "author": "@klobber/lotide",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Klobsinger/lotide/issues"
+  },
+  "homepage": "https://github.com/Klobsinger/lotide#readme",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^9.2.2"
+  }
+}

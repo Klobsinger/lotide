@@ -6,7 +6,6 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-
 const findKey = function(object,callback) {
   let keys = Object.keys(object); // line (11) creates a array of the keys from the given object and assigns them to keys var
   for (const key of keys) {        //line (12) iterates over each key in the array
@@ -18,8 +17,6 @@ const findKey = function(object,callback) {
   
   return undefined;                //(line 18) if no match is found after the loop then it automatically returns undefined
 };
-
-
 
 const test1 = (findKey({
   "Blue Hill": { stars: 1 },

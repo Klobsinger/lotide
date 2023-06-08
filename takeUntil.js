@@ -18,11 +18,6 @@ const assertArraysEqual = function(array1,array2) {
   }
 };
 
-
-
-
-
-
 const takeUntil = function(array, callback) {
   const result = [];                       // line (27) since I wasnt using a function that makes a new array for me i created a empty array
   for (let i = 0; i < array.length; i++) {    // line (28) I was going to use a different method like .filter or another method of looping
@@ -34,21 +29,10 @@ const takeUntil = function(array, callback) {
   return result;
 };
 
-
-
-
-
-
-
-
-
-
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
 const results1 = takeUntil(data1, x => x < 0);
 const expected = [ 1, 2, 5, 7, 2 ];
 assertArraysEqual(results1,expected);
-
-
 
 console.log('---');
 

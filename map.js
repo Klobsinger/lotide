@@ -18,9 +18,7 @@ const assertArraysEqual = function(array1,array2) {
   }
 };
 
-
 const words = ["Ghitsa", "Leo", "Robin", "Baghoul", "Goblin"];
-
 
 const map = function(array, callback) {
   const results = [];
@@ -30,7 +28,6 @@ const map = function(array, callback) {
   return results;
 };
 module.exports = map;
-
 
 const results1 = map(words, word => word[0]);
 console.log(results1);

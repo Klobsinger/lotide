@@ -16,7 +16,6 @@ const  assertObjectsEqual = require('./assertObjectsEqual');
 const  assertEqual = require('./assertEqual');
 const  assertArraysEqual = require('./assertArraysEqual');
 
-
 module.exports = {
   head,
   tail,
@@ -36,5 +35,3 @@ module.exports = {
   assertEqual,
   assertArraysEqual
 };
-const functions = require('./index');
-console.log(functions);

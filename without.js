@@ -37,7 +37,6 @@ without(words, ["lighthouse"]); // no need to capture return value for this test
 assertArraysEqual(words, ["hello", "world", "lighthouse"]);
 module.exports = without;
 
-
 //push items from source array into my new blank array.
 //use a if statement to check if the values match on the itemsToRemove array and if they do dont
 //push them.

@@ -21,9 +21,6 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
-
-
-
 const assertObjectsEqual = function(actual,expected) {
   const inspect = require('util').inspect;
   if (eqObjects(actual, expected)) {
@@ -34,7 +31,6 @@ const assertObjectsEqual = function(actual,expected) {
 };
 
 module.exports = assertObjectsEqual;
-
 
 const test = {
   color: 'red'
