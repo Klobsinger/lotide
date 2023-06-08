@@ -1,3 +1,4 @@
+const { eqArrays } = require('./index');
 const eqObjects = function(object1, object2) {
   const keys1 = Object.keys(object1); // I grab the keys from object 1 / 2 and store them in two arrays
   const keys2 = Object.keys(object2);

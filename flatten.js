@@ -1,5 +1,5 @@
 const flatten = function(array) {
-  const flattenedArray = [];
+  let flattenedArray = [];
   for (let i = 0; i < array.length; i++) {
     if (Array.isArray(array[i])) {
       const nestedFlattenedArray = flatten(array[i]);
